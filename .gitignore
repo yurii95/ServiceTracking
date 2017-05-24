@@ -1,0 +1,6 @@
+/classes/
+/.settings/
+/.idea/
+/src/main/resources/images/
+/target/
+/serviceTracking.iml

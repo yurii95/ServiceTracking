@@ -51,9 +51,6 @@ public class UserEntity {
 
     private int idUserWallet;
 
-    @Enumerated(value = EnumType.STRING)
-    private UserRole userRole = UserRole.USER;
-
     @Column(name = "active")
     private int active;
 

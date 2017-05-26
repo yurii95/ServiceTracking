@@ -41,7 +41,7 @@ public class UserService {
         if(userValidationStatusCode.equals(UserValidationStatusCode.OK)){
             UserEntity user = new UserEntity(login, password,firstName, lastName, email, birthday);
             user.setActive(1);
-            RoleEntity userRole = roleRepository.findByRole("ADMIN");
+            RoleEntity userRole = roleRepository.findByRole("USER");
             user.setRoles(new HashSet<RoleEntity>(Arrays.asList(userRole)));
             user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
             userRepository.save(user);

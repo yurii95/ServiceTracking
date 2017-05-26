@@ -70,7 +70,7 @@ public class RootConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/images/**").addResourceLocations("/WEB-INF/resources/images/");
+        registry.addResourceHandler("/WEB-INF/resources/images/**").addResourceLocations("/WEB-INF/resources/images/");
         registry.addResourceHandler("/styles/**").addResourceLocations("/WEB-INF/resources/styles/");
     }
 
